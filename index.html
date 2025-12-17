@@ -16,7 +16,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #2c3e50;
             text-align: center;
         }
@@ -52,6 +52,7 @@
             font-size: 16px;
             font-weight: bold;
             grid-column: 1 / -1;
+            transition: background 0.3s;
         }
         button:hover {
             background: #2980b9;
@@ -64,15 +65,18 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         th {
             background: #2c3e50;
             color: white;
             padding: 12px;
             text-align: left;
+            position: sticky;
+            top: 0;
         }
         td {
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ddd;
         }
         tr:nth-child(even) {
@@ -84,26 +88,76 @@
         .current-slot {
             background: #d4edda !important;
             border-left: 5px solid #28a745;
+            font-weight: bold;
         }
         .no-data {
             text-align: center;
-            padding: 20px;
+            padding: 40px;
             color: #666;
             font-style: italic;
-        }
-        .highlight {
-            background: #fff3cd !important;
-            border-left: 5px solid #ffc107;
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            margin: 20px 0;
         }
         .venue {
             color: #666;
             font-size: 0.9em;
-            margin-top: 3px;
+            margin-top: 5px;
         }
-        .batch-info {
+        .faculty-info {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        .lecture-no {
             color: #3498db;
             font-size: 0.9em;
-            margin-top: 2px;
+            font-weight: bold;
+        }
+        .summary {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .stats {
+            color: #666;
+            font-size: 0.95em;
+        }
+        .batch-badge {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .course-badge {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .time-cell {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            .controls {
+                grid-template-columns: 1fr;
+            }
+            table {
+                font-size: 14px;
+            }
+            td, th {
+                padding: 8px;
+            }
         }
     </style>
 </head>
@@ -129,7 +183,7 @@
                 </select>
             </div>
             <div>
-                <label for="division">Select Division (Optional):</label>
+                <label for="division">Select Division:</label>
                 <select id="division">
                     <option value="all">All Divisions</option>
                     <option value="A">Division A</option>
@@ -145,8 +199,12 @@
                 </select>
             </div>
             <div>
-                <label for="currentTime">Show Current Slot:</label>
-                <input type="checkbox" id="currentTime" checked>
+                <label for="course">Select Course:</label>
+                <select id="course">
+                    <option value="all">All Courses</option>
+                    <option value="BCA_BScIT">BCA/BScIT</option>
+                    <option value="IMCA">IMCA</option>
+                </select>
             </div>
             <button onclick="showTimetable()">Show Timetable</button>
         </div>
@@ -157,214 +215,33 @@
     </div>
 
     <script>
-        // Faculty timetable data
-        const timetableData = {
-            "Table 1":[
-                {
-                    "Column1": "At & Po Limda, Ta Waghodia, Dt, Vadodara",
-                    "QUALITY RECORDS": "W.E.F. :  24/11/2025"
-                },
-                {
-                    "Column1": "CLASS TIME TABLE"
-                },
-                {
-                    "Column1": "COURSE : BCA/ BScIT",
-                    "QUALITY RECORDS": "SEM 4, DIV A, Minor- AI & ML BHAGAT SINGH BUILDING"
-                },
-                {
-                    "Column1": "ACA YR: 2025-26 EVEN"
-                },
-                {
-                    "Column1": "Lecture No.",
-                    "Column2": "Lecture Timing",
-                    "Column3": "Monday",
-                    "Column4": "Tuesday",
-                    "QUALITY RECORDS": "Wednesday",
-                    "Column6": "Thursday",
-                    "Column7": "Friday",
-                    "Column8": "Saturday"
-                },
-                {
-                    "Column1": 1,
-                    "Column2": "09:30 AM To\n10:25 AM",
-                    "Column3": "PULMS Self Study",
-                    "Column4": "Statistics\nDr. Priyanshu Yadav Classroom no 301",
-                    "QUALITY RECORDS": "Minor AI LAB Prof. Nirmit Prof., Prachi Lab no 601, 602",
-                    "Column6": "Minor AI - Prof. Nirmit Classroom no 301",
-                    "Column7": "Library",
-                    "Column8": "PULMS Self Study"
-                },
-                {
-                    "Column1": 2,
-                    "Column2": "10:25 AM To\n11:20 AM",
-                    "Column4": "Minor AI - Prof. Nirmit Classroom no 303",
-                    "Column6": "Class Test Classroom no 301"
-                },
-                {
-                    "Column1": "Recess",
-                    "Column3": "Lunch Break (11:20 TO 12:20)"
-                },
-                {
-                    "Column3": "Specialization\nAI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302),",
-                    "Column4": "Specialization\nAI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302),",
-                    "QUALITY RECORDS": "Specialization\nAI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302),",
-                    "Column6": "Specialization LAB\nAI [Batch-1] : Prof. Vijya Tulsani , Prof. Nirmit Shah\nLab no.601,602\nAI [ Batch-2] : Prof, Megha, Prof.\nMehul D Lab no 603,604\nGaming Tech.\nProf. Y Rama Deepak Lab No. 711\nFSW\nProf. Uma B. Lab no.609 Prof. Shivani Lab no 610\nCloud Comp. [Batch-1] Prof. Arun, Dr. Ghanshyam Lab no.613,702\nCloud Comp. [ Batch-2] : Prof. Mini B, Prof, Madhav Lab no 703,704\nCSF [Batch-1]\nProf. Saikat, Prof. Aniket Paul"
-                },
-                {
-                    "Column1": 3,
-                    "Column2": "12:20 AM To\n01:15 PM",
-                    "Column3": "Gaming Tech. - Prof. Y Rama Deepak\n(Classroom no : 303),\nFSW - Prof. Uma Bharti (Classroom no : 305),\nCC [Batch-1]- Prof. Arun (Classroom no : 307),\nCC [Batch-2]- Prof. Mini Bhola (Classroom no : 308),",
-                    "Column4": "Gaming Tech. - Prof. Y Rama Deepak\n(Classroom no : 303),\nFSW - Prof. Uma Bharti (Classroom no : 305),\nCC [Batch-1]- Prof. Arun (Classroom no : 307),\nCC [Batch-2]- Prof. Mini Bhola (Classroom no : 308),",
-                    "QUALITY RECORDS": "Gaming Tech. - Prof. Y Rama Deepak\n(Classroom no : 303),\nFSW - Prof. Uma Bharti (Classroom no : 305),\nCC [Batch-1]- Prof. Arun (Classroom no : 307),\nCC [Batch-2]- Prof. Mini Bhola (Classroom no : 308),",
-                    "Column7": "AEC - II\nBasic German II Prof Praniti [ CDC] Classroom no 302\nBasic Freanch II Dr. Shaili [CDC] Classroom no 303",
-                    "Column8": "Value Added"
-                },
-                {
-                    "Column3": "CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2 ]- Prof. Sweta J (Classroom no : 601),",
-                    "Column4": "CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2 ]- Prof. Sweta J (Classroom no : 601),",
-                    "QUALITY RECORDS": "CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2 ]- Prof. Sweta J (Classroom no : 601),"
-                },
-                {
-                    "Column3": "BDA - Prof. Sonali Kharade (Classroom no : 602)",
-                    "Column4": "BDA - Prof. Sonali Kharade (Classroom no : 602)",
-                    "QUALITY RECORDS": "BDA - Prof. Sonali Kharade (Classroom no : 602)"
-                },
-                {
-                    "Column1": 4,
-                    "Column2": "01:15 PM To\n02:10 PM",
-                    "Column3": "AEC - II\nBasic German II Prof Praniti [ CDC] Classroom no 302\nBasic Freanch II Dr. Shaili [CDC] Classroom no 303",
-                    "Column4": "Minor AI - Prof. Nirmit Classroom no 301",
-                    "QUALITY RECORDS": "Advance Englist - II Prof. Hitesh Siju Classroom no 301",
-                    "Column6": "Lab no.705,706\nCSF [ Batch-2] :\nProf. Sweta, Prof. Prarik Raj Lab no 707,708\nBDA\nProf. Sonali K, Prof. Vipul G, Lab no.709,710",
-                    "Column7": "Advance Englist - II Prof. Hitesh Siju Classroom no 301"
-                },
-                {
-                    "Column1": "Recess",
-                    "Column3": "Short Break (02:10 TO 02:30)"
-                },
-                {
-                    "Column1": 5,
-                    "Column2": "02:30 PM to 03:\n25 PM",
-                    "Column3": "DCN - Prof. Saumil Trivedi Classroom no 301",
-                    "Column4": "PHP LAB\nProf. Akshar Muley Prof. Tanmay Shah Lab no 601,602",
-                    "QUALITY RECORDS": "DCN LAB\nProf. Saumil Trivedi, Prof. Saikat Pramanik Lab no 606, 605",
-                    "Column6": "PHP - Prof. Akshar Classroom no 301",
-                    "Column7": "Statistics\nDr. Priyanshu Yadav Classroom no 301",
-                    "Column8": "Psychology of Stress, Health and Wellbeing (Swayam portal)"
-                },
-                {
-                    "Column1": 6,
-                    "Column2": "03:25 PM to 04:\n20 PM",
-                    "Column3": "PHP - Prof. Akshar Classroom no 301",
-                    "Column6": "PULMS Self Study",
-                    "Column7": "PHP - Prof. Akshar Classroom no 301"
+        // Load timetable data from JSON file
+        let timetableData = null;
+
+        // Load JSON data
+        async function loadTimetableData() {
+            try {
+                const response = await fetch('ug4.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load timetable data');
                 }
-            ],
-            "Table 2":[
-                {
-                    "Parul University - Faculty of IT & CS": "At & Po Limda, Ta Waghodia, Dt, Vadodara",
-                    "QUALITY RECORDS": "W.E.F. :  24/11/2025"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": "CLASS TIME TABLE"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": "COURSE : BCA/ BScIT",
-                    "QUALITY RECORDS": "SEM 4, DIV B, Minor- AI & ML BHAGAT SINGH BUILDING"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": "ACA YR: 2025-26 EVEN"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": "Lecture No.",
-                    "Column2": "Lecture Timing",
-                    "Column3": "Monday",
-                    "Column4": "Tuesday",
-                    "QUALITY RECORDS": "Wednesday",
-                    "Column6": "Thursday",
-                    "Column7": "Friday",
-                    "Column8": "Saturday"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": 1,
-                    "Column2": "09:30 AM To\n10:25 AM",
-                    "Column3": "Minor AI - Prof. Prachi Classroom no 302",
-                    "Column4": "PHP - Prof. Akshar Classroom no 602",
-                    "QUALITY RECORDS": "PHP LAB\nProf. Akshar, Prof Tanmay Shah\nLab no 603, 604",
-                    "Column6": "PHP - Prof. Akshar Classroom no 302",
-                    "Column7": "Library",
-                    "Column8": "PULMS Self Study"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": 2,
-                    "Column2": "10:25 AM To\n11:20 AM",
-                    "Column3": "Advance Englist - II Prof. Arpita Nayak Classroom no 302",
-                    "Column4": "PULMS Self Study",
-                    "Column6": "Class Test Classroom no 302"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": "Recess",
-                    "Column3": "Lunch Break (11:20 TO 12:20)"
-                },
-                {
-                    "Column3": "Specialization\nAI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302),",
-                    "Column4": "Specialization\nAI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302),",
-                    "QUALITY RECORDS": "Specialization\nAI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302),",
-                    "Column6": "Specialization LAB\nAI [Batch-1] : Prof. Vijya Tulsani , Prof. Nirmit Shah\nLab no.601,602\nAI [ Batch-2] : Prof, Megha, Prof.\nMehul D Lab no 603,604\nGaming Tech.\nProf. Y Rama Deepak Lab No. 711\nFSW\nProf. Uma B. Lab no.609 Prof. Shivani Lab no 610\nCloud Comp. [Batch-1] Prof. Arun, Dr. Ghanshyam Lab no.613,702\nCloud Comp. [ Batch-2] : Prof. Mini B, Prof, Madhav Lab no 703,704\nCSF [Batch-1]\nProf. Saikat, Prof. Aniket Paul Lab no.705,706"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": 3,
-                    "Column2": "12:20 AM To\n01:15 PM",
-                    "Column3": "Gaming Tech. - Prof. Y Rama Deepak\n(Classroom no : 303),\nFSW - Prof. Uma Bharti (Classroom no : 305),\nCC [Batch-1]- Prof. Arun (Classroom no : 307),\nCC [Batch-2]- Prof. Mini Bhola (Classroom no : 308),",
-                    "Column4": "Gaming Tech. - Prof. Y Rama Deepak\n(Classroom no : 303),\nFSW - Prof. Uma Bharti (Classroom no : 305),\nCC [Batch-1]- Prof. Arun (Classroom no : 307),\nCC [Batch-2]- Prof. Mini Bhola (Classroom no : 308),",
-                    "QUALITY RECORDS": "Gaming Tech. - Prof. Y Rama Deepak\n(Classroom no : 303),\nFSW - Prof. Uma Bharti (Classroom no : 305),\nCC [Batch-1]- Prof. Arun (Classroom no : 307),\nCC [Batch-2]- Prof. Mini Bhola (Classroom no : 308),",
-                    "Column7": "AEC - II\nBasic German II Prof Praniti [ CDC] Classroom no 302\nBasic Freanch II Dr. Shaili [CDC] Classroom no 303",
-                    "Column8": "Value Added"
-                },
-                {
-                    "Column3": "CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2 ]- Prof. Sweta J (Classroom no : 601),",
-                    "Column4": "CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2 ]- Prof. Sweta J (Classroom no : 601),",
-                    "QUALITY RECORDS": "CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2 ]- Prof. Sweta J (Classroom no : 601),"
-                },
-                {
-                    "Column3": "BDA - Prof. Sonali Kharade (Classroom no : 602)",
-                    "Column4": "BDA - Prof. Sonali Kharade (Classroom no : 602)",
-                    "QUALITY RECORDS": "BDA - Prof. Sonali Kharade (Classroom no : 602)"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": 4,
-                    "Column2": "01:15 PM To\n02:10 PM",
-                    "Column3": "AEC - II\nBasic German II Prof Praniti [ CDC] Classroom no 302\nBasic Freanch II Dr. Shaili [CDC] Classroom no 303",
-                    "Column4": "Minor AI - Prof. Prachi Classroom no 302",
-                    "QUALITY RECORDS": "Statistics\nDr. Priyanshu Yadav Classroom no 602",
-                    "Column6": "CSF [ Batch-2] :\nProf. Sweta, Prof. Prarik Raj Lab no 707,708\nBDA\nProf. Sonali K, Prof. Vipul G, Lab no.709,710",
-                    "Column7": "Advance Englist - II Prof. Arpita Nayak Classroom no 302"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": "Recess",
-                    "Column3": "Short Break (02:10 TO 02:30)"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": 5,
-                    "Column2": "02:30 PM to 03:\n25 PM",
-                    "Column3": "PHP - Prof. Akshar Classroom no 302",
-                    "Column4": "DCN LAB  Prof. Sumit Soni, Prof. Saumil Trivedi\nLab no 611,612",
-                    "QUALITY RECORDS": "Minor AI LAB Prof. Prachi Dr. Raj\nLab no 603, 604",
-                    "Column6": "PULMS Self Study",
-                    "Column7": "Minor AI - Prof. Prachi Classroom no 302",
-                    "Column8": "Psychology of Stress, Health and Wellbeing (Swayam portal)"
-                },
-                {
-                    "Parul University - Faculty of IT & CS": 6,
-                    "Column2": "03:25 PM to 04:\n20 PM",
-                    "Column3": "DCN - Prof. Sumit Soni Classroom no 302",
-                    "Column7": "Statistics\nDr. Priyanshu Yadav Classroom no 302"
-                }
-            ]
-        };
+                timetableData = await response.json();
+                console.log('Timetable data loaded successfully');
+            } catch (error) {
+                console.error('Error loading timetable data:', error);
+                document.getElementById('result').innerHTML = `
+                    <div class="no-data">
+                        <h3>Error Loading Timetable Data</h3>
+                        <p>Please check if ug4.json file exists and is accessible</p>
+                    </div>
+                `;
+            }
+        }
 
         // Parse time string to minutes since midnight
         function timeToMinutes(timeStr) {
+            if (!timeStr) return 0;
+            
             const time = timeStr.trim();
             const match = time.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
             if (!match) return 0;
@@ -379,72 +256,89 @@
             return hours * 60 + minutes;
         }
 
-        // Extract faculty name from text
-        function extractFacultyName(text) {
-            const facultyPatterns = [
-                /(Dr\.|Prof\.)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)/g,
-                /([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+(?:Classroom|Lab)/g,
-                /-\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)/g
-            ];
-            
-            let facultyNames = [];
-            for (const pattern of facultyPatterns) {
-                const matches = text.matchAll(pattern);
-                for (const match of matches) {
-                    if (match[1] && !facultyNames.includes(match[1].trim())) {
-                        facultyNames.push(match[1].trim());
-                    }
-                }
-            }
-            return facultyNames;
-        }
-
-        // Extract venue from text
-        function extractVenue(text) {
-            const venuePatterns = [
-                /(Classroom no\s+[0-9A-Z]+)/gi,
-                /(Lab no\s+[0-9A-Z]+(?:,\s*[0-9A-Z]+)*)/gi,
-                /(Room no\s+[0-9A-Z]+)/gi,
-                /(Classroom\s+[0-9A-Z]+)/gi,
-                /(Lab\s+[0-9A-Z]+)/gi
-            ];
-            
-            for (const pattern of venuePatterns) {
-                const match = text.match(pattern);
-                if (match) return match[0];
-            }
-            return 'Not specified';
-        }
-
-        // Extract subject from text
-        function extractSubject(text) {
-            const subjectPatterns = [
-                /^([^-]+?)(?=\s*-\s*|$)/,
-                /(?:^|\n)([A-Za-z\s&]+)(?=\s*(?:-|Classroom|Lab|\n|$))/,
-                /([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*(?:\s+[IV]+)?)(?=\s*$|\s*[-\n])/
-            ];
-            
-            for (const pattern of subjectPatterns) {
-                const match = text.match(pattern);
-                if (match && match[1].trim() && match[1].trim().length > 2) {
-                    return match[1].trim();
-                }
-            }
-            return text.split('\n')[0] || 'Activity';
-        }
-
         // Get current time in minutes
         function getCurrentTimeInMinutes() {
             const now = new Date();
             return now.getHours() * 60 + now.getMinutes();
         }
 
+        // Check if time is within current slot
+        function isCurrentTimeSlot(startTime, endTime) {
+            const currentTime = getCurrentTimeInMinutes();
+            const startMinutes = timeToMinutes(startTime);
+            const endMinutes = timeToMinutes(endTime);
+            
+            // Handle cases where end time might be earlier than start time (e.g., 11:59 PM to 12:30 AM)
+            if (endMinutes < startMinutes) {
+                // If current time is before midnight and after start time, it's current
+                if (currentTime >= startMinutes && currentTime <= (24 * 60)) {
+                    return true;
+                }
+                // If current time is after midnight and before end time, it's current
+                if (currentTime >= 0 && currentTime <= endMinutes) {
+                    return true;
+                }
+            } else {
+                // Normal case
+                return currentTime >= startMinutes && currentTime <= endMinutes;
+            }
+            
+            return false;
+        }
+
+        // Search for faculty in text
+        function searchFacultyInText(text, facultyName) {
+            if (!text || !facultyName) return false;
+            
+            const normalizedText = text.toLowerCase();
+            const normalizedFaculty = facultyName.toLowerCase();
+            
+            // Check for exact match or partial match
+            if (normalizedText.includes(normalizedFaculty)) {
+                return true;
+            }
+            
+            // Check for variations (remove titles)
+            const facultyWithoutTitle = normalizedFaculty
+                .replace(/^dr\.\s*/, '')
+                .replace(/^prof\.\s*/, '')
+                .replace(/^mr\.\s*/, '')
+                .replace(/^mrs\.\s*/, '')
+                .replace(/^ms\.\s*/, '');
+            
+            if (facultyWithoutTitle && normalizedText.includes(facultyWithoutTitle)) {
+                return true;
+            }
+            
+            // Check for reverse search (faculty name contains text from activity)
+            const words = normalizedText.split(/\s+/);
+            for (const word of words) {
+                if (word.length > 3 && normalizedFaculty.includes(word)) {
+                    return true;
+                }
+            }
+            
+            return false;
+        }
+
+        // Extract batch info from subject
+        function extractBatchInfo(subject) {
+            if (!subject) return '';
+            const batchMatch = subject.match(/\[Batch[-\s]*([12])\]/i);
+            return batchMatch ? `Batch ${batchMatch[1]}` : '';
+        }
+
         // Main function to show timetable
         function showTimetable() {
+            if (!timetableData) {
+                alert('Timetable data is still loading. Please try again in a moment.');
+                return;
+            }
+            
             const facultyName = document.getElementById('facultyName').value.trim();
             const selectedDay = document.getElementById('day').value;
             const selectedDivision = document.getElementById('division').value;
-            const showCurrent = document.getElementById('currentTime').checked;
+            const selectedCourse = document.getElementById('course').value;
             
             if (!facultyName) {
                 alert('Please enter a faculty name');
@@ -452,102 +346,56 @@
             }
             
             const results = [];
-            const currentTime = showCurrent ? getCurrentTimeInMinutes() : null;
+            const currentTime = getCurrentTimeInMinutes();
             
-            // Process each table
-            for (const [tableName, tableData] of Object.entries(timetableData)) {
-                // Find division from table data
-                let division = '';
-                for (const row of tableData) {
-                    if (row['QUALITY RECORDS'] && row['QUALITY RECORDS'].includes('DIV')) {
-                        const divMatch = row['QUALITY RECORDS'].match(/DIV\s+([A-J])/);
-                        if (divMatch) division = divMatch[1];
-                        break;
-                    }
-                }
-                
-                // Skip if division filter is active and doesn't match
-                if (selectedDivision !== 'all' && division !== selectedDivision) {
+            // Search through all courses
+            for (const [courseName, courseData] of Object.entries(timetableData.timetable)) {
+                // Skip if course filter is active and doesn't match
+                if (selectedCourse !== 'all' && courseName !== selectedCourse) {
                     continue;
                 }
                 
-                // Get day column mapping
-                const dayColumns = {
-                    'Monday': 'Column3',
-                    'Tuesday': 'Column4',
-                    'Wednesday': 'QUALITY RECORDS',
-                    'Thursday': 'Column6',
-                    'Friday': 'Column7',
-                    'Saturday': 'Column8'
-                };
-                
-                const dayColumn = dayColumns[selectedDay];
-                
-                // Process each timetable row
-                for (const row of tableData) {
-                    if (row['Column1'] && typeof row['Column1'] === 'number' && row['Column2'] && row[dayColumn]) {
-                        const timeText = row['Column2'];
-                        const activityText = row[dayColumn];
-                        
-                        // Skip empty activities
-                        if (!activityText || activityText.trim() === '') continue;
-                        
-                        // Check if faculty is mentioned in the activity
-                        const facultyNames = extractFacultyName(activityText);
-                        const normalizedFacultyName = facultyName.toLowerCase();
-                        
-                        let isFacultyMatch = false;
-                        for (const name of facultyNames) {
-                            if (name.toLowerCase().includes(normalizedFacultyName) || 
-                                normalizedFacultyName.includes(name.toLowerCase())) {
-                                isFacultyMatch = true;
-                                break;
-                            }
-                        }
-                        
-                        // Also check if faculty name appears directly in text
-                        if (!isFacultyMatch && activityText.toLowerCase().includes(normalizedFacultyName)) {
-                            isFacultyMatch = true;
-                        }
-                        
-                        if (isFacultyMatch) {
-                            // Parse time
-                            const timeMatch = timeText.match(/(\d{1,2}:\d{2}\s*[AP]M).*?(\d{1,2}:\d{2}\s*[AP]M)/i);
-                            if (timeMatch) {
-                                const startTime = timeMatch[1];
-                                const endTime = timeMatch[2];
-                                const startMinutes = timeToMinutes(startTime);
-                                const endMinutes = timeToMinutes(endTime);
-                                
-                                // Check if current time falls within this slot
-                                let isCurrent = false;
-                                if (currentTime !== null && currentTime >= startMinutes && currentTime <= endMinutes) {
-                                    isCurrent = true;
-                                }
-                                
-                                // Extract subject and venue
-                                const subject = extractSubject(activityText);
-                                const venue = extractVenue(activityText);
-                                
-                                // Extract batch information if present
-                                let batchInfo = '';
-                                const batchMatch = activityText.match(/\[Batch-([12])\]/);
-                                if (batchMatch) {
-                                    batchInfo = `Batch ${batchMatch[1]}`;
-                                }
-                                
-                                results.push({
-                                    division: division || 'Unknown',
-                                    lectureNo: row['Column1'],
-                                    startTime: startTime,
-                                    endTime: endTime,
-                                    subject: subject,
-                                    venue: venue,
-                                    batch: batchInfo,
-                                    isCurrent: isCurrent,
-                                    details: activityText
-                                });
-                            }
+                // Search through all divisions
+                for (const [divisionName, divisionData] of Object.entries(courseData.divisions)) {
+                    // Skip if division filter is active and doesn't match
+                    if (selectedDivision !== 'all' && divisionName !== selectedDivision) {
+                        continue;
+                    }
+                    
+                    // Get lectures for the selected day
+                    const dayLectures = divisionData.days[selectedDay];
+                    if (!dayLectures) continue;
+                    
+                    // Check each lecture
+                    for (const lecture of dayLectures) {
+                        // Check if faculty matches
+                        if (searchFacultyInText(lecture.faculty, facultyName) || 
+                            searchFacultyInText(lecture.subject, facultyName)) {
+                            
+                            // Check if current time falls within this slot
+                            const isCurrent = isCurrentTimeSlot(
+                                lecture.time.split(' - ')[0],
+                                lecture.time.split(' - ')[1]
+                            );
+                            
+                            // Extract batch info
+                            const batchInfo = extractBatchInfo(lecture.subject);
+                            
+                            results.push({
+                                course: courseName === 'BCA_BScIT' ? 'BCA/BScIT' : courseName,
+                                division: divisionName,
+                                minor: divisionData.minor || '',
+                                lectureNo: lecture.lecture,
+                                time: lecture.time,
+                                startTime: lecture.time.split(' - ')[0],
+                                endTime: lecture.time.split(' - ')[1],
+                                subject: lecture.subject.replace(/\[Batch[-\s]*[12]\]/gi, '').trim(),
+                                faculty: lecture.faculty,
+                                venue: lecture.venue,
+                                batch: batchInfo,
+                                isCurrent: isCurrent,
+                                building: divisionData.building
+                            });
                         }
                     }
                 }
@@ -564,23 +412,34 @@
             if (results.length === 0) {
                 resultDiv.innerHTML = `
                     <div class="no-data">
-                        <h3>No classes found for ${facultyName} on ${day}</h3>
-                        <p>Try a different name or check the spelling</p>
+                        <h3>No classes found for "${facultyName}" on ${day}</h3>
+                        <p>Try a different name, day, or division</p>
                     </div>
                 `;
                 return;
             }
             
+            // Sort results by time
+            results.sort((a, b) => {
+                return timeToMinutes(a.startTime) - timeToMinutes(b.startTime);
+            });
+            
             let html = `
-                <h3>Timetable for ${facultyName} - ${day}</h3>
+                <div class="summary">
+                    <h3>Timetable for "${facultyName}" - ${day}</h3>
+                    <div class="stats">
+                        <strong>Total Classes:</strong> ${results.length} | 
+                        <strong>Current Classes:</strong> ${results.filter(r => r.isCurrent).length}
+                    </div>
+                </div>
                 <table>
                     <thead>
                         <tr>
-                            <th>Division</th>
                             <th>Time</th>
+                            <th>Course & Division</th>
                             <th>Subject</th>
+                            <th>Faculty</th>
                             <th>Venue</th>
-                            <th>Batch</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -589,21 +448,19 @@
             
             results.forEach(result => {
                 const rowClass = result.isCurrent ? 'current-slot' : '';
-                const status = result.isCurrent ? 'Current' : '';
+                const status = result.isCurrent ? '⏳ Current' : '';
+                const timeDisplay = `<span class="time-cell">${result.time}</span>`;
+                const courseDivision = `${result.course} <span class="course-badge">Div ${result.division}</span>`;
+                const subjectDisplay = `${result.subject} ${result.batch ? `<span class="batch-badge">${result.batch}</span>` : ''}`;
+                const venueDisplay = `<div class="venue">${result.venue}</div><div class="lecture-no">Lecture ${result.lectureNo}</div>`;
                 
                 html += `
                     <tr class="${rowClass}">
-                        <td>${result.division}</td>
-                        <td>${result.startTime} - ${result.endTime}</td>
-                        <td>
-                            ${result.subject}
-                            ${result.batch ? `<div class="batch-info">${result.batch}</div>` : ''}
-                        </td>
-                        <td>
-                            ${result.venue}
-                            <div class="venue">Lecture No: ${result.lectureNo}</div>
-                        </td>
-                        <td>${result.batch || '-'}</td>
+                        <td>${timeDisplay}</td>
+                        <td>${courseDivision}</td>
+                        <td>${subjectDisplay}</td>
+                        <td><div class="faculty-info">${result.faculty || '-'}</div></td>
+                        <td>${venueDisplay}</td>
                         <td>${status}</td>
                     </tr>
                 `;
@@ -612,19 +469,35 @@
             html += `
                     </tbody>
                 </table>
-                <p><strong>Total classes found:</strong> ${results.length}</p>
+                <div class="summary">
+                    <div class="stats">
+                        <strong>Building:</strong> ${results[0].building || 'BHAGAT SINGH BUILDING'} |
+                        <strong>Semester:</strong> 4 |
+                        <strong>Academic Year:</strong> 2025-26
+                    </div>
+                </div>
             `;
             
             resultDiv.innerHTML = html;
         }
 
-        // Auto-populate today's day
-        window.onload = function() {
+        // Auto-populate today's day and load data on page load
+        window.onload = async function() {
             const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
             const today = new Date().getDay();
             if (today >= 1 && today <= 6) {
                 document.getElementById('day').value = days[today];
             }
+            
+            // Load timetable data
+            await loadTimetableData();
+            
+            // Add keyboard support (Enter key to search)
+            document.getElementById('facultyName').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    showTimetable();
+                }
+            });
         };
     </script>
 </body>
