@@ -1,1053 +1,802 @@
 {
-  "timetable": {
-    "BCA_BScIT": {
+  "timetables": [
+    {
+      "sheet_name": "Table 1",
+      "course": "BCA/BScIT",
       "semester": "4",
+      "division": "A",
+      "minor": "AI & ML",
       "academic_year": "2025-26 EVEN",
-      "divisions": {
-        "A": {
-          "minor": "AI & ML",
-          "building": "BHAGAT SINGH BUILDING",
-          "days": {
-            "Monday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Gaming Tech.",
-                "faculty": "Prof. Y Rama Deepak",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "FSW",
-                "faculty": "Prof. Uma Bharti",
-                "venue": "Classroom no 305"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-1]",
-                "faculty": "Prof. Arun",
-                "venue": "Classroom no 307"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-2]",
-                "faculty": "Prof. Mini Bhola",
-                "venue": "Classroom no 308"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "CSF [Batch-1]",
-                "faculty": "Prof. Saikat P",
-                "venue": "Classroom no 309"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "AEC - II Basic German II",
-                "faculty": "Prof Praniti",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "AEC - II Basic French II",
-                "faculty": "Dr. Shaili",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "DCN",
-                "faculty": "Prof. Saumil Trivedi",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "PHP",
-                "faculty": "Prof. Akshar",
-                "venue": "Classroom no 301"
-              }
-            ],
-            "Tuesday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Minor AI",
-                "faculty": "Prof. Nirmit",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Gaming Tech.",
-                "faculty": "Prof. Y Rama Deepak",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "FSW",
-                "faculty": "Prof. Uma Bharti",
-                "venue": "Classroom no 305"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-1]",
-                "faculty": "Prof. Arun",
-                "venue": "Classroom no 307"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-2]",
-                "faculty": "Prof. Mini Bhola",
-                "venue": "Classroom no 308"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "CSF [Batch-1]",
-                "faculty": "Prof. Saikat P",
-                "venue": "Classroom no 309"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "BDA",
-                "faculty": "Prof. Sonali Kharade",
-                "venue": "Classroom no 602"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "Minor AI",
-                "faculty": "Prof. Nirmit",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "PHP LAB",
-                "faculty": "Prof. Akshar Muley, Prof. Tanmay Shah",
-                "venue": "Lab no 601,602"
-              }
-            ],
-            "Wednesday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Minor AI LAB",
-                "faculty": "Prof. Nirmit, Prof. Prachi",
-                "venue": "Lab no 601,602"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Gaming Tech.",
-                "faculty": "Prof. Y Rama Deepak",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "FSW",
-                "faculty": "Prof. Uma Bharti",
-                "venue": "Classroom no 305"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-1]",
-                "faculty": "Prof. Arun",
-                "venue": "Classroom no 307"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-2]",
-                "faculty": "Prof. Mini Bhola",
-                "venue": "Classroom no 308"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "Advance English - II",
-                "faculty": "Prof. Hitesh Siju",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "DCN LAB",
-                "faculty": "Prof. Saumil Trivedi, Prof. Saikat Pramanik",
-                "venue": "Lab no 606,605"
-              }
-            ],
-            "Thursday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Minor AI",
-                "faculty": "Prof. Nirmit",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Class Test",
-                "faculty": "",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "PHP",
-                "faculty": "Prof. Akshar",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              }
-            ],
-            "Friday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Library",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "AEC - II Basic German II",
-                "faculty": "Prof Praniti",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "AEC - II Basic French II",
-                "faculty": "Dr. Shaili",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "Advance English - II",
-                "faculty": "Prof. Hitesh Siju",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom no 301"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "PHP",
-                "faculty": "Prof. Akshar",
-                "venue": "Classroom no 301"
-              }
-            ],
-            "Saturday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Value Added",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Psychology of Stress, Health and Wellbeing (Swayam portal)",
-                "faculty": "",
-                "venue": ""
-              }
-            ]
-          }
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization": "12:20 PM To 01:15 PM: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "3": "12:20 PM To 01:15 PM: Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN - Prof. Saumil Trivedi Classroom no 301",
+          "6": "03:25 PM To 04:20 PM: PHP - Prof. Akshar Classroom no 301"
         },
-        "B": {
-          "minor": "AI & ML",
-          "building": "BHAGAT SINGH BUILDING",
-          "days": {
-            "Monday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Minor AI",
-                "faculty": "Prof. Prachi",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Advance English - II",
-                "faculty": "Prof. Arpita Nayak",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Gaming Tech.",
-                "faculty": "Prof. Y Rama Deepak",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "FSW",
-                "faculty": "Prof. Uma Bharti",
-                "venue": "Classroom no 305"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-1]",
-                "faculty": "Prof. Arun",
-                "venue": "Classroom no 307"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-2]",
-                "faculty": "Prof. Mini Bhola",
-                "venue": "Classroom no 308"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "AEC - II Basic German II",
-                "faculty": "Prof Praniti",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "AEC - II Basic French II",
-                "faculty": "Dr. Shaili",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "PHP",
-                "faculty": "Prof. Akshar",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "DCN",
-                "faculty": "Prof. Sumit Soni",
-                "venue": "Classroom no 302"
-              }
-            ],
-            "Tuesday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "PHP",
-                "faculty": "Prof. Akshar",
-                "venue": "Classroom no 602"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Gaming Tech.",
-                "faculty": "Prof. Y Rama Deepak",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "FSW",
-                "faculty": "Prof. Uma Bharti",
-                "venue": "Classroom no 305"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-1]",
-                "faculty": "Prof. Arun",
-                "venue": "Classroom no 307"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-2]",
-                "faculty": "Prof. Mini Bhola",
-                "venue": "Classroom no 308"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "BDA",
-                "faculty": "Prof. Sonali Kharade",
-                "venue": "Classroom no 602"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "Minor AI",
-                "faculty": "Prof. Prachi",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "DCN LAB",
-                "faculty": "Prof. Sumit Soni, Prof. Saumil Trivedi",
-                "venue": "Lab no 611,612"
-              }
-            ],
-            "Wednesday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "PHP LAB",
-                "faculty": "Prof. Akshar, Prof Tanmay Shah",
-                "venue": "Lab no 603,604"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Gaming Tech.",
-                "faculty": "Prof. Y Rama Deepak",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "FSW",
-                "faculty": "Prof. Uma Bharti",
-                "venue": "Classroom no 305"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-1]",
-                "faculty": "Prof. Arun",
-                "venue": "Classroom no 307"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Cloud Computing [Batch-2]",
-                "faculty": "Prof. Mini Bhola",
-                "venue": "Classroom no 308"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom no 602"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Minor AI LAB",
-                "faculty": "Prof. Prachi, Dr. Raj",
-                "venue": "Lab no 603,604"
-              }
-            ],
-            "Thursday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "PHP",
-                "faculty": "Prof. Akshar",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Class Test",
-                "faculty": "",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              }
-            ],
-            "Friday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Library",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "AEC - II Basic German II",
-                "faculty": "Prof Praniti",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "AEC - II Basic French II",
-                "faculty": "Dr. Shaili",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "Advance English - II",
-                "faculty": "Prof. Arpita Nayak",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Minor AI",
-                "faculty": "Prof. Prachi",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom no 302"
-              }
-            ],
-            "Saturday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Value Added",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Psychology of Stress, Health and Wellbeing (Swayam portal)",
-                "faculty": "",
-                "venue": ""
-              }
-            ]
-          }
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: Statistics Dr. Priyanshu Yadav Classroom no 301",
+          "2": "10:25 AM To 11:20 AM: Minor AI - Prof. Nirmit Classroom no 303",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization": "12:20 PM To 01:15 PM: Same as Monday Specialization",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Minor AI - Prof. Nirmit Classroom no 301",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP LAB Prof. Akshar Muley Prof. Tanmay Shah Lab no 601,602",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
         },
-        "C": {
-          "minor": "AI & ML",
-          "building": "BHAGAT SINGH BUILDING",
-          "days": {
-            "Monday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Minor AI",
-                "faculty": "Dr. Raj",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "PHP",
-                "faculty": "Prof. Sohil Parmar",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Specialization",
-                "faculty": "Various",
-                "venue": "Various Classrooms"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "AEC - II Basic German II",
-                "faculty": "Prof Praniti",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "AEC - II Basic French II",
-                "faculty": "Dr. Shaili",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Statistics",
-                "faculty": "Dr. Pravin Vadhel",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "Advance English - II",
-                "faculty": "Prof. Hitesh Siju",
-                "venue": "Classroom no 303"
-              }
-            ],
-            "Tuesday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Minor AI LAB",
-                "faculty": "Dr. Raj, Prof. Prachi",
-                "venue": "Lab no 601,602"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Specialization",
-                "faculty": "Various",
-                "venue": "Various Classrooms"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "PHP",
-                "faculty": "Prof. Sohil Parmar",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Library",
-                "faculty": "",
-                "venue": ""
-              }
-            ],
-            "Wednesday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "DCN",
-                "faculty": "Prof. Saumil Trivedi",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Minor AI",
-                "faculty": "Dr. Raj",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Specialization",
-                "faculty": "Various",
-                "venue": "Various Classrooms"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              }
-            ],
-            "Thursday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "Advance English - II",
-                "faculty": "Prof. Hitesh Siju",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Class Test",
-                "faculty": "",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "DCN LAB",
-                "faculty": "Prof. Saumil Trivedi, Prof. FRK",
-                "venue": "Lab no 611,612"
-              }
-            ],
-            "Friday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "PHP LAB",
-                "faculty": "Prof. Sohil Parmar, Prof. Pratik P",
-                "venue": "Lab no 601,602"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "AEC - II Basic German II",
-                "faculty": "Prof Praniti",
-                "venue": "Classroom no 302"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "AEC - II Basic French II",
-                "faculty": "Dr. Shaili",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "PHP",
-                "faculty": "Prof. Sohil Parmar",
-                "venue": "Classroom no 308"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Minor AI",
-                "faculty": "Dr. Raj",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "Statistics",
-                "faculty": "Dr. Pravin Vadhel",
-                "venue": "Classroom no 303"
-              }
-            ],
-            "Saturday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "PULMS Self Study",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Psychology of Stress, Health and Wellbeing (Swayam portal)",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Value Added",
-                "faculty": "",
-                "venue": ""
-              }
-            ]
-          }
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: Minor AI LAB Prof. Nirmit Prof., Prachi Lab no 601, 602",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization": "12:20 PM To 01:15 PM: Same as Monday Specialization",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Advance English - II Prof. Hitesh Siju Classroom no 301",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN LAB Prof. Saumil Trivedi, Prof. Saikat Pramanik Lab no 606, 605",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: Minor AI - Prof. Nirmit Classroom no 301",
+          "2": "10:25 AM To 11:20 AM: Class Test Classroom no 301",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP - Prof. Akshar Classroom no 301",
+          "6": "03:25 PM To 04:20 PM: PULMS Self Study"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: Library",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: Advance English - II Prof. Hitesh Siju Classroom no 301",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Statistics Dr. Priyanshu Yadav Classroom no 301",
+          "6": "03:25 PM To 04:20 PM: PHP - Prof. Akshar Classroom no 301"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Value Added",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
         }
       }
     },
-    "IMCA": {
+    {
+      "sheet_name": "Table 2",
+      "course": "BCA/BScIT",
       "semester": "4",
-      "academic_year": "2025-26 Even",
-      "divisions": {
-        "A": {
-          "building": "BHAGAT SINGH BUILDING",
-          "days": {
-            "Monday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "BIS",
-                "faculty": "Dr. ARM",
-                "venue": "Classroom-304"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "AI-I",
-                "faculty": "Dr. Raj Sinha",
-                "venue": "Lab no 603"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "CSF-I",
-                "faculty": "Prof. Saikat paramanik",
-                "venue": "Lab no 604"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Minor Project",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom-303"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "MAD",
-                "faculty": "Prof. Manish kumar joshi",
-                "venue": "Classroom-607"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "Library",
-                "faculty": "",
-                "venue": ""
-              }
-            ],
-            "Tuesday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "BIS",
-                "faculty": "Dr. ARM",
-                "venue": "Classroom-303"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom-303"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Placement Training",
-                "faculty": "Prof. Bhawishya Singh",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "EMA - F1",
-                "faculty": "",
-                "venue": "Classroom-601"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "MAD",
-                "faculty": "Prof. Manish kumar joshi",
-                "venue": "Classroom-601"
-              }
-            ],
-            "Wednesday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "AI-I",
-                "faculty": "Dr. Raj Sinha",
-                "venue": "Lab no 609"
-              },
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "CSF-I",
-                "faculty": "Prof. Saikat paramanik",
-                "venue": "Lab no 610"
-              },
-              {
-                "lecture": 2,
-                "time": "10:25 AM - 11:20 AM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom-305"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Placement Training",
-                "faculty": "Prof. Bhawishya Singh",
-                "venue": "Classroom no 603"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Minor Project",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "MAD",
-                "faculty": "Prof. Manish kumar joshi",
-                "venue": "Classroom-306"
-              }
-            ],
-            "Thursday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "AI-I",
-                "faculty": "Dr. Raj Sinha",
-                "venue": "Lab no 607"
-              },
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "CSF-I",
-                "faculty": "Prof. Saikat paramanik",
-                "venue": "Lab no 608"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "Placement Training",
-                "faculty": "Prof. Bhawishya Singh",
-                "venue": "Classroom no 303"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "Library",
-                "faculty": "",
-                "venue": ""
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "MAD",
-                "faculty": "Prof. Manish kumar joshi",
-                "venue": "Classroom-601"
-              }
-            ],
-            "Friday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "MAD [LAB]",
-                "faculty": "Prof. Manish kumar joshi",
-                "venue": "Lab-609"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "AI-I [LAB]",
-                "faculty": "Dr. Raj Sinha",
-                "venue": "Lab-601"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "CSF-I [LAB]",
-                "faculty": "Prof. Saikat paramanik",
-                "venue": "Lab-602"
-              },
-              {
-                "lecture": 5,
-                "time": "02:30 PM - 03:25 PM",
-                "subject": "EMA - F1",
-                "faculty": "",
-                "venue": "Classroom-605"
-              },
-              {
-                "lecture": 6,
-                "time": "03:25 PM - 04:20 PM",
-                "subject": "MAD",
-                "faculty": "Prof. Manish kumar joshi",
-                "venue": "Classroom-605"
-              }
-            ],
-            "Saturday": [
-              {
-                "lecture": 1,
-                "time": "09:30 AM - 10:25 AM",
-                "subject": "MAD [LAB]",
-                "faculty": "Prof. Manish kumar joshi",
-                "venue": "Lab-607"
-              },
-              {
-                "lecture": 3,
-                "time": "12:20 PM - 01:15 PM",
-                "subject": "BIS",
-                "faculty": "Dr. ARM",
-                "venue": "Classroom-307"
-              },
-              {
-                "lecture": 4,
-                "time": "01:15 PM - 02:10 PM",
-                "subject": "Statistics",
-                "faculty": "Dr. Priyanshu Yadav",
-                "venue": "Classroom-307"
-              }
-            ]
-          }
+      "division": "B",
+      "minor": "AI & ML",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: Minor AI - Prof. Prachi Classroom no 302",
+          "2": "10:25 AM To 11:20 AM: Advance English - II Prof. Arpita Nayak Classroom no 302",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization": "12:20 PM To 01:15 PM: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "3": "12:20 PM To 01:15 PM: Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP - Prof. Akshar Classroom no 302",
+          "6": "03:25 PM To 04:20 PM: DCN - Prof. Sumit Soni Classroom no 302"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: PHP - Prof. Akshar Classroom no 602",
+          "2": "10:25 AM To 11:20 AM: PULMS Self Study",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization": "12:20 PM To 01:15 PM: Same as Monday Specialization",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Minor AI - Prof. Prachi Classroom no 302",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN LAB Prof. Sumit Soni, Prof. Saumil Trivedi Lab no 611,612",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: PHP LAB Prof. Akshar, Prof Tanmay Shah Lab no 603, 604",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization": "12:20 PM To 01:15 PM: Same as Monday Specialization",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Statistics Dr. Priyanshu Yadav Classroom no 602",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Minor AI LAB Prof. Prachi Dr. Raj Lab no 603, 604",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: PHP - Prof. Akshar Classroom no 302",
+          "2": "10:25 AM To 11:20 AM: Class Test Classroom no 302",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: Library",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: Advance English - II Prof. Arpita Nayak Classroom no 302",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Minor AI - Prof. Prachi Classroom no 302",
+          "6": "03:25 PM To 04:20 PM: Statistics Dr. Priyanshu Yadav Classroom no 302"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Value Added",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 3",
+      "course": "BCA/BScIT",
+      "semester": "4",
+      "division": "C",
+      "minor": "AI & ML",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: Minor AI - Dr. Raj Classroom no 303",
+          "2": "10:25 AM To 11:20 AM: PHP - Prof. Sohil Parmar Classroom no 303",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Specialization: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Statistics Dr. Pravin Vadhel Classroom no 303",
+          "6": "03:25 PM To 04:20 PM: Advance English - II Prof. Hitesh Siju Classroom no 303"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: Minor AI LAB Dr. Raj Prof. Prachi Lab no 601, 602",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Sohil Parmar Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Library",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: DCN - Prof. Saumil Trivedi Classroom no 303",
+          "2": "10:25 AM To 11:20 AM: Minor AI - Dr. Raj Classroom no 303",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PULMS Self Study",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: Advance English - II Prof. Hitesh Siju Classroom no 303",
+          "2": "10:25 AM To 11:20 AM: Class Test Classroom no 303",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN LAB Prof. Saumil Trivedi, Prof. FRK Lab no 611, 612",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: PHP LAB Prof. Sohil Parmar Prof. Pratik P Lab no 601, 602",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Sohil Parmar Classroom no 308",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Minor AI - Dr. Raj Classroom no 303",
+          "6": "03:25 PM To 04:20 PM: Statistics Dr. Pravin Vadhel Classroom no 303"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Value Added",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 4",
+      "course": "BCA/BScIT",
+      "semester": "4",
+      "division": "D",
+      "minor": "CSF",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: PHP - Prof. Sohil Parmar Classroom no 304",
+          "2": "10:25 AM To 11:20 AM: Advance English - II Prof. Hitesh Siju Classroom no 304",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Specialization: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Minor CSF - Prof. Pratik Raj Classroom 601",
+          "6": "03:25 PM To 04:20 PM: DCN - Prof. Saumil Trivedi Classroom no 601"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: DCN LAB Prof. Saumil T, Prof. FRK Lab no 609,610",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Advance English - II Prof. Hitesh Siju Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Minor CSF LAB Prof. Pratik Raj Prof. Sweta J Lab no 603,604",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Sohil Parmar Classroom no 305",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Minor CSF - Prof. Pratik Raj Classroom 301",
+          "6": "03:25 PM To 04:20 PM: Statistics Prof. Divya Garg Classroom no 301"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: Minor CSF - Prof. Pratik Raj Classroom no 304",
+          "2": "10:25 AM To 11:20 AM: Class Test [Reading Room]",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706; CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708",
+          "4": "01:15 PM To 02:10 PM: BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Library",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: PHP LAB Prof. Sohil Parmar, Prof. Pratik Raj Lab no 605, 606",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: Statistics Prof. Divya Garg Classroom no 304",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP - Prof. Sohil Parmar Classroom 304",
+          "6": "03:25 PM To 04:20 PM: PULMS Self Study"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: PULMS Self Study",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Value Added",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 5",
+      "course": "BCA/BScIT",
+      "semester": "4",
+      "division": "E",
+      "minor": "CSF",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: Statistics Prof. Divya Garg Classroom no 305",
+          "2": "10:25 AM To 11:20 AM: Minor CSF - Prof. Sweta J Classroom no 305",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Specialization: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: DCN - Prof. Sonali Gupta Classroom no 305",
+          "2": "10:25 AM To 11:20 AM: PULMS Self Study",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Advance English - II Prof. Hitesh Siju Classroom no 305",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Statistics Prof. Divya Garg Classroom no 305",
+          "6": "03:25 PM To 04:20 PM: PHP - Prof. Pratik P Classroom no 605"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: PHP LAB Prof. Pratik P Prof. Khyati K Lab no 607, 608",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Minor CSF - Prof. Sweta J Classroom 302",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN LAB Prof. Sonali Gupta, Prof. Daniel Lab no 607, 608",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: PHP - Prof. Pratik P Classroom no 305",
+          "2": "10:25 AM To 11:20 AM: Class Test Classroom no 305",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP - Prof. Pratik P Classroom no 304",
+          "6": "03:25 PM To 04:20 PM: Minor CSF - Prof. Sweta J Classroom 304"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: Library",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: Advance English - II Prof. Hitesh Siju Classroom no 305",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Minor CSF LAB Prof. Sweta J Prof. Pratik Raj Lab no 710, 711",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Value Added",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 6",
+      "course": "BCA/BScIT",
+      "semester": "4",
+      "division": "F",
+      "minor": "Animation",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: PHP LAB Prof. Pratik P Prof. Khyati K Lab no 601, 602",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Specialization: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Advance English - II Prof. Hitesh Siju Classroom no 304",
+          "6": "03:25 PM To 04:20 PM: DCN - Prof. Sonali Gupta Classroom no 304"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: Library",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Pratik P Classroom no 304",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN LAB Prof. Sonali Gupta , Prof. FRK Lab no 605, 606",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Animation Prof. ASHUTOSH PATEL Classroom no 308",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: Advance English - II Prof. Hitesh Siju Classroom no 304"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: Statistics Dr. Pravin Vadhel Classroom no 308",
+          "2": "10:25 AM To 11:20 AM: Class Test Classroom no 308",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Animation LAB Prof. ASHUTOSH PATEL Lab no 601,602",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Pratik P Classroom no 305",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Animation LAB Prof. ASHUTOSH PATEL Lab no 601,602",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: PHP - Prof. Pratik P Classroom no 304",
+          "4": "01:15 PM To 02:10 PM: Statistics Dr. Pravin Vadhel Classroom no 304",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Value Added",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 7",
+      "course": "BCA/BScIT",
+      "semester": "4",
+      "division": "G",
+      "minor": "Digital Marketing",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: DM - Brand Mgmt Classroom no 306",
+          "2": "10:25 AM To 11:20 AM: Statistics Dr. Priyanshu Yadav Classroom no 306",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Specialization: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP - Prof. Khyati K Classroom no 306",
+          "6": "03:25 PM To 04:20 PM: DM - Brand Mgmt Classroom no 306"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: PHP LAB Prof. Khyati K, Prof. Pratik Parmar Lab no 603,604",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Advance English - II Prof. Arpita Nayak Classroom no 306",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP - Prof. Khyati K Classroom no 303",
+          "6": "03:25 PM To 04:20 PM: DM - Brand Mgmt Classroom no 303"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: Placement Training Classroom no: New Prof. Ayush Bhardwaj",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PULMS Self Study",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Statistics Dr. Priyanshu Yadav Classroom no 304",
+          "6": "03:25 PM To 04:20 PM: PULMS Self Study"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: DCN - Smarika R Classroom no 309",
+          "2": "10:25 AM To 11:20 AM: Class Test [Reading Room]",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN LAB Prof. Smarika R, Prof Vishal Lab no 702, 703",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: DM - Brand Mgmt Classroom no 306",
+          "2": "10:25 AM To 11:20 AM: Advance English - II Prof. Arpita Nayak Classroom no 304",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Khyati K Classroom no 307",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Library",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: Value Added",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 7 (cont.)",
+      "course": "BCA/BScIT",
+      "semester": "4",
+      "division": "H",
+      "minor": "Digital Marketing",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: DM - Brand Mgmt Classroom no 305",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Specialization: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN - Smarika R Classroom no 307",
+          "6": "03:25 PM To 04:20 PM: Statistics Dr. Pravin Vadhel Classroom no 307"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Khyati K Classroom no 307",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Library",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: Advance English - II Prof. Arpita Nayak Classroom no 302",
+          "2": "10:25 AM To 11:20 AM: DM - Brand Mgmt Classroom no 302",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Khyati K Classroom no 302",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP LAB Prof. Khyati K, Prof. Akshar Muley Lab no 708, 709",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: PHP - Prof. Khyati K Classroom no 306",
+          "2": "10:25 AM To 11:20 AM: Class Test Classroom no 306",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Advance English - II Prof. Arpita Nayak Classroom no 305",
+          "6": "03:25 PM To 04:20 PM: DM - Brand Mgmt Classroom no 603"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: DCN LAB Prof. Smarika R, Prof. Sonali G Lab no 710,711",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: DM - Brand Mgmt Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Statistics Dr. Pravin Vadhel Classroom no 302",
+          "6": "03:25 PM To 04:20 PM: Library"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: Value Added",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: PULMS Self Study",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 8",
+      "course": "BCA/BScIT",
+      "semester": "4",
+      "division": "I",
+      "minor": "Digital Marketing",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Specialization: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DM - Brand Mgmt Classroom no 308",
+          "6": "03:25 PM To 04:20 PM: PHP - Prof. Tanmay Classroom no 308"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: PHP LAB Prof. Tanmay, Prof. Pratik Raj Lab no 607, 608",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: Statistics Dr. Umesh Gupta Classroom no 305",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Advance English - II Prof. Arpita Nayak Classroom no 304",
+          "6": "03:25 PM To 04:20 PM: DM - Brand Mgmt Classroom no 304"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: DM - Brand Mgmt Classroom no 306",
+          "2": "10:25 AM To 11:20 AM: Advance English - II Prof. Arpita Nayak Classroom no 305",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Tanmay Classroom no 306",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: DCN LAB Prof. FRK, Dr. Sumit Soni Lab no 611,612",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: Statistics Dr. Umesh Gupta Classroom no 307",
+          "2": "10:25 AM To 11:20 AM: Class Test Classroom no 307",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: DCN - FRK Classroom no 305",
+          "2": "10:25 AM To 11:20 AM: DM - Brand Mgmt Classroom no 303",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Tanmay Classroom no 308",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Library",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Value Added",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 9",
+      "course": "BCA/BScIT",
+      "semester": "4",
+      "division": "J",
+      "minor": "Animation+Photography+Videography",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: PHP LAB Prof. Tanmay, Prof. Adarsh Ashok Lab no 605, 606",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Specialization: AI[Batch-1]-Prof. Vijya Tulsani (Classroom no : 301), AI[Batch-2]- Prof. Megha T (Classroom no : 302), Gaming Tech. - Prof. Y Rama Deepak (Classroom no : 303), FSW - Prof. Uma Bharti (Classroom no : 305), CC [Batch-1]- Prof. Arun (Classroom no : 307), CC [Batch-2]- Prof. Mini Bhola (Classroom no : 308), CSF[Batch-1]-Prof. Saikat P (Classroom no : 309), CSF[Batch-2]- Prof. Sweta J (Classroom no : 601), BDA - Prof. Sonali Kharade (Classroom no : 602)",
+          "4": "01:15 PM To 02:10 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: LAB: Photography: Prof. Siddharth Rane Lab no 611; Videography: Prof. Aman Parmar Lab no 612; Animation: Prof. ASHUTOSH PATEL Lab no 613",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: PULMS Self Study",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Tanmay Classroom no 308",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Library",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: Value Added",
+          "2": "10:25 AM To 11:20 AM: Statistics Prof. Dhananjay Sahani Classroom no 305",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Same as Monday Slot 3",
+          "4": "01:15 PM To 02:10 PM: DCN - FRK Classroom no 307",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Photography: Prof. Siddharth Rane Lab no 702; Videography: Prof. Lab no 703; Animation: Prof. ASHUTOSH PATEL Lab no. 708",
+          "6": "03:25 PM To 04:20 PM: Advance English - II Prof. Arpita Nayak Classroom no 307"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: Animation Prof. Classroom no 607",
+          "2": "10:25 AM To 11:20 AM: Class Test Classroom no 607",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "Specialization_LAB": "12:20 PM To 01:15 PM: AI [Batch-1]: Prof. Vijya Tulsani, Prof. Nirmit Shah Lab no.601,602; AI [Batch-2]: Prof. Megha, Prof. Mehul D Lab no 603,604; Gaming Tech.: Prof. Y Rama Deepak Lab No. 711; FSW: Prof. Uma B. Lab no.609 Prof. Shivani Lab no 610; Cloud Comp. [Batch-1]: Prof. Arun, Dr. Ghanshyam Lab no.613,702; Cloud Comp. [Batch-2]: Prof. Mini B, Prof. Madhav Lab no 703,704; CSF [Batch-1]: Prof. Saikat, Prof. Aniket Paul Lab no.705,706",
+          "4": "01:15 PM To 02:10 PM: CSF [Batch-2]: Prof. Sweta, Prof. Prarik Raj Lab no 707,708; BDA: Prof. Sonali K, Prof. Vipul G, Lab no.709,710",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PHP - Prof. Tanmay Classroom no ?",
+          "6": "03:25 PM To 04:20 PM: Advance English - II Prof. Arpita Nayak Classroom no 307"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: Siddharth Rane Lab no 603; Videography: Prof. Aman Parmar Lab no 604; Animation: Prof. ASHUTOSH PATEL Lab no 712",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AEC - II Basic German II Prof Praniti [CDC] Classroom no 302, Basic French II Dr. Shaili [CDC] Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: Advance English - II Classroom no 601",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: PULMS Self Study",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: DCN LAB Prof. FRK, Prof. Sonali Gupta Lab no 601,602",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Statistics Prof. Dhananjay Sahani Classroom no 303",
+          "4": "01:15 PM To 02:10 PM: PHP - Prof. Tanmay Classroom no 303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Psychology of Stress, Health and Wellbeing (Swayam portal)",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
+        }
+      }
+    },
+    {
+      "sheet_name": "Table 9 (cont.)",
+      "course": "IMCA",
+      "semester": "4",
+      "division": "A",
+      "minor": "N/A",
+      "academic_year": "2025-26 EVEN",
+      "effective_from": "24/11/2025",
+      "location": "BHAGAT SINGH BUILDING",
+      "schedule": {
+        "Monday": {
+          "1": "09:30 AM To 10:25 AM: BIS - Dr. ARM Classroom-304",
+          "2": "10:25 AM To 11:20 AM: AI-I - Dr. Raj Sinha Lab no 603; CSF-I - Prof. Saikat Pramanik Lab no 604",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Minor Project",
+          "4": "01:15 PM To 02:10 PM: Statistics - Dr. Priyanshu Yadav Classroom-303",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: MAD - Prof. Manish Kumar Joshi Classroom-607",
+          "6": "03:25 PM To 04:20 PM: Library"
+        },
+        "Tuesday": {
+          "1": "09:30 AM To 10:25 AM: BIS - Dr. ARM Classroom-303",
+          "2": "10:25 AM To 11:20 AM: Statistics - Dr. Priyanshu Yadav Classroom-303",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Placement Training Classroom no 303 Prof. Bhawishya Singh",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: EMA - F1 Classroom-601",
+          "6": "03:25 PM To 04:20 PM: MAD - Prof. Manish Kumar Joshi Classroom-601"
+        },
+        "Wednesday": {
+          "1": "09:30 AM To 10:25 AM: AI-I - Dr. Raj Sinha Lab no 609; CSF-I - Prof. Saikat Pramanik Lab no 610",
+          "2": "10:25 AM To 11:20 AM: Statistics - Dr. Priyanshu Yadav Classroom-305",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Placement Training Classroom no 603 Prof. Bhawishya Singh",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Minor Project",
+          "6": "03:25 PM To 04:20 PM: MAD - Prof. Manish Kumar Joshi Classroom-306"
+        },
+        "Thursday": {
+          "1": "09:30 AM To 10:25 AM: AI-I - Dr. Raj Sinha Lab no 607; CSF-I - Prof. Saikat Pramanik Lab no 608",
+          "2": "10:25 AM To 11:20 AM: Class Test [Reading Room]",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: Placement Training Classroom no 303 Prof. Bhawishya Singh",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: Library",
+          "6": "03:25 PM To 04:20 PM: MAD - Prof. Manish Kumar Joshi Classroom-601"
+        },
+        "Friday": {
+          "1": "09:30 AM To 10:25 AM: MAD [LAB] - Prof. Manish Kumar Joshi Lab-609",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: AI-I [LAB] - Dr. Raj Sinha Lab-601; CSF-I [LAB] - Prof. Saikat Pramanik Lab-602",
+          "4": "01:15 PM To 02:10 PM: (Empty)",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: EMA - F1 Classroom-605",
+          "6": "03:25 PM To 04:20 PM: MAD - Prof. Manish Kumar Joshi Classroom-605"
+        },
+        "Saturday": {
+          "1": "09:30 AM To 10:25 AM: MAD [LAB] - Prof. Manish Kumar Joshi Lab-607",
+          "2": "10:25 AM To 11:20 AM: (Empty)",
+          "Recess": "11:20 AM To 12:20 PM: Lunch Break",
+          "3": "12:20 PM To 01:15 PM: BIS - Dr. ARM Classroom-307",
+          "4": "01:15 PM To 02:10 PM: Statistics - Dr. Priyanshu Yadav Classroom-307",
+          "Recess_2": "02:10 PM To 02:30 PM: Short Break",
+          "5": "02:30 PM To 03:25 PM: (Empty)",
+          "6": "03:25 PM To 04:20 PM: (Empty)"
         }
       }
     }
-  }
+  ]
 }
