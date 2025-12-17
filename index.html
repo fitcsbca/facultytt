@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Record Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f8f9fa;
+    }
+    h2 { text-align: center; }
+    .container {
+      max-width: 950px;
+      margin: auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc;
+    }
+    input {
+      padding: 10px;
+      width: 260px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+    }
+    th { background: #efefef; }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+ <h2 style="text-align:center; font-weight:600; margin-bottom:20px;">
+  Parul University FITCS BCA/B.SC Semester-1 MID Semester Marks<br>
+  <span style="font-size:20px; color:#444;">Search Your Record</span>
+</h2>
+
+  <input id="idInput" placeholder="Enter Enrollment">
+  <button onclick="search()">Search</button>
+<div id="loader" style="
+  display:none;
+  margin-top:20px;
+  text-align:center;
+  font-size:18px;
+">
+  ⏳ Loading... Please wait
+</div>
+
+  <div id="result"></div>
+</div>
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbzSxszSvXrsFcldov1rCvl9StIrb83_uHHLOf4ZyuwJI4i-GQPPmOGJmfeBP2g8wKoI/exec";
+
+function cleanName(name) {
+  return name
+    .replace(/-TH|\(TH\)|-PR|\(PR\)/g, "")
+    .replace(/  +/g, " ")
+    .trim();
+}
+
+function normalize(name) {
+  return name
+    .replace(/\s*-\s*/g, "-")   // normalize hyphens with or without spaces
+    .replace(/\s+/g, "")        // remove other spaces
+    .replace(/[-()]/g, "")      // remove -, ( )
+    .toLowerCase();
+}
+
+
+async function search() {
+const loader = document.getElementById("loader");
+  loader.style.display = "block";
+  const id = document.getElementById("idInput").value.trim();
+  const response = await fetch("data.json");
+  const data = await response.json();
+
+  const record = data.find(item =>
+    item["Enrollment"] === id ||
+    item["UG No."] === id ||
+    item["S.N."] === id
+  );
+
+  if (!record) {
+    document.getElementById("result").innerHTML = "<p>❌ No record found</p>";
+    return;
+  }
+
+  // CHECK IN GOOGLE SHEET
+  let checkURL = `${scriptURL}?action=check&enroll=${record['Enrollment']}`;
+ 
+  let check = await fetch(checkURL).then(res => res.text());
+/*
+  if (check === "FOUND") {
+    document.getElementById("result").innerHTML = `
+      <h3 style="color:#c00;">⚠ You have already confirmed your information.</h3>
+      <p>Record confirmation is allowed only once.</p>
+    `;
+    return;
+  }
+*/
+  let detailsHTML = `
+    <h3>Student Details</h3>
+    <table>
+      <tr><th>Name</th><td>${record["Name"]}</td></tr>
+      <tr><th>Enrollment</th><td>${record["Enrollment"]}</td></tr>
+      <tr><th>UG No.</th><td>${record["UG No."]}</td></tr>
+      <tr><th>Program</th><td>${record["Program"] || "-"}</td></tr>
+      <tr><th>Status</th><td>${record["Status"] || "-"}</td></tr>
+    </table>
+  `;
+
+  let marksHTML = `
+    <h3>Marks</h3>
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Theory</th>
+        <th>Practical</th>
+      </tr>
+  `;
+
+  let usedKeys = new Set();
+
+  Object.keys(record).forEach(key => {
+    if (usedKeys.has(key)) return;
+
+    if (key.match(/(TH)\)?$/)) {
+      let subject = cleanName(key);
+      let theory = record[key];
+      let practical = "-";
+
+      let base = cleanName(key);
+      let normBase = normalize(base);
+
+      // FIX for 'Fundamentals of Web Developmen-PR'
+      let prKey = Object.keys(record).find(k =>
+        normalize(cleanName(k)) === normBase &&
+        (k.endsWith("-PR") || k.endsWith("(PR)"))
+      );
+
+      if (prKey) {
+        practical = record[prKey];
+        usedKeys.add(prKey);
+      }
+
+      usedKeys.add(key);
+
+      marksHTML += `
+        <tr>
+          <td>${subject}</td>
+          <td>${theory}</td>
+          <td>${practical}</td>
+        </tr>
+      `;
+    }
+
+    else if (
+      typeof record[key] === "string" &&
+      !key.includes("Enrollment") &&
+      !key.includes("UG No") &&
+      !key.includes("Name") &&
+      !key.includes("Program") &&
+      !key.includes("Status") &&
+      !key.includes("S.N.") &&
+      !key.match(/(TH|PR)\)?$/)
+    ) {
+      marksHTML += `
+        <tr>
+          <td>${cleanName(key)}</td>
+          <td>${record[key]}</td>
+          <td>-</td>
+        </tr>
+      `;
+    }
+  });
+
+  marksHTML += "</table>";
+
+  document.getElementById("result").innerHTML = `
+    <div class="grid">
+      <div>${detailsHTML}</div>
+      <div>${marksHTML}</div>
+    </div>
+
+    <div id="confirmBox" style="margin-top:20px;">
+      <label style="font-size:20px; cursor:pointer;">
+        <input id="confirmCheck" type="checkbox" style="width:22px; height:22px; transform:scale(1.4); margin-right:10px;">
+        ✔ I confirm this information is correct
+      </label>
+      <br><br>
+      <button onclick="saveConfirmation('${record["UG No."]}', '${record["Enrollment"]}', '${record["Name"]}')">
+        Save Confirmation
+      </button>
+    </div>
+  `;
+  loader.style.display = "none";
+}
+
+function saveConfirmation(ug, enroll, name) {
+  const checkbox = document.getElementById("confirmCheck");
+
+  if (!checkbox.checked) {
+    alert("⚠ Please click the checkbox before proceeding.");
+    return;
+  }
+
+  fetch(`${scriptURL}?action=save&ug=${encodeURIComponent(ug)}&enroll=${encodeURIComponent(enroll)}&name=${encodeURIComponent(name)}`)
+    .then(() => {
+      alert("✔ Successfully Confirmed!");
+
+      checkbox.disabled = true;
+
+      setTimeout(() => location.reload(), 800);
+    })
+    .catch(() => alert("❌ Error saving data"));
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
