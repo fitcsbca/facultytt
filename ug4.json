@@ -1,0 +1,1053 @@
+{
+  "timetable": {
+    "BCA_BScIT": {
+      "semester": "4",
+      "academic_year": "2025-26 EVEN",
+      "divisions": {
+        "A": {
+          "minor": "AI & ML",
+          "building": "BHAGAT SINGH BUILDING",
+          "days": {
+            "Monday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Gaming Tech.",
+                "faculty": "Prof. Y Rama Deepak",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "FSW",
+                "faculty": "Prof. Uma Bharti",
+                "venue": "Classroom no 305"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-1]",
+                "faculty": "Prof. Arun",
+                "venue": "Classroom no 307"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-2]",
+                "faculty": "Prof. Mini Bhola",
+                "venue": "Classroom no 308"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "CSF [Batch-1]",
+                "faculty": "Prof. Saikat P",
+                "venue": "Classroom no 309"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "AEC - II Basic German II",
+                "faculty": "Prof Praniti",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "AEC - II Basic French II",
+                "faculty": "Dr. Shaili",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "DCN",
+                "faculty": "Prof. Saumil Trivedi",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "PHP",
+                "faculty": "Prof. Akshar",
+                "venue": "Classroom no 301"
+              }
+            ],
+            "Tuesday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Minor AI",
+                "faculty": "Prof. Nirmit",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Gaming Tech.",
+                "faculty": "Prof. Y Rama Deepak",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "FSW",
+                "faculty": "Prof. Uma Bharti",
+                "venue": "Classroom no 305"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-1]",
+                "faculty": "Prof. Arun",
+                "venue": "Classroom no 307"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-2]",
+                "faculty": "Prof. Mini Bhola",
+                "venue": "Classroom no 308"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "CSF [Batch-1]",
+                "faculty": "Prof. Saikat P",
+                "venue": "Classroom no 309"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "BDA",
+                "faculty": "Prof. Sonali Kharade",
+                "venue": "Classroom no 602"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "Minor AI",
+                "faculty": "Prof. Nirmit",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "PHP LAB",
+                "faculty": "Prof. Akshar Muley, Prof. Tanmay Shah",
+                "venue": "Lab no 601,602"
+              }
+            ],
+            "Wednesday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Minor AI LAB",
+                "faculty": "Prof. Nirmit, Prof. Prachi",
+                "venue": "Lab no 601,602"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Gaming Tech.",
+                "faculty": "Prof. Y Rama Deepak",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "FSW",
+                "faculty": "Prof. Uma Bharti",
+                "venue": "Classroom no 305"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-1]",
+                "faculty": "Prof. Arun",
+                "venue": "Classroom no 307"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-2]",
+                "faculty": "Prof. Mini Bhola",
+                "venue": "Classroom no 308"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "Advance English - II",
+                "faculty": "Prof. Hitesh Siju",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "DCN LAB",
+                "faculty": "Prof. Saumil Trivedi, Prof. Saikat Pramanik",
+                "venue": "Lab no 606,605"
+              }
+            ],
+            "Thursday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Minor AI",
+                "faculty": "Prof. Nirmit",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Class Test",
+                "faculty": "",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "PHP",
+                "faculty": "Prof. Akshar",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              }
+            ],
+            "Friday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Library",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "AEC - II Basic German II",
+                "faculty": "Prof Praniti",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "AEC - II Basic French II",
+                "faculty": "Dr. Shaili",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "Advance English - II",
+                "faculty": "Prof. Hitesh Siju",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom no 301"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "PHP",
+                "faculty": "Prof. Akshar",
+                "venue": "Classroom no 301"
+              }
+            ],
+            "Saturday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Value Added",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Psychology of Stress, Health and Wellbeing (Swayam portal)",
+                "faculty": "",
+                "venue": ""
+              }
+            ]
+          }
+        },
+        "B": {
+          "minor": "AI & ML",
+          "building": "BHAGAT SINGH BUILDING",
+          "days": {
+            "Monday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Minor AI",
+                "faculty": "Prof. Prachi",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Advance English - II",
+                "faculty": "Prof. Arpita Nayak",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Gaming Tech.",
+                "faculty": "Prof. Y Rama Deepak",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "FSW",
+                "faculty": "Prof. Uma Bharti",
+                "venue": "Classroom no 305"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-1]",
+                "faculty": "Prof. Arun",
+                "venue": "Classroom no 307"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-2]",
+                "faculty": "Prof. Mini Bhola",
+                "venue": "Classroom no 308"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "AEC - II Basic German II",
+                "faculty": "Prof Praniti",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "AEC - II Basic French II",
+                "faculty": "Dr. Shaili",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "PHP",
+                "faculty": "Prof. Akshar",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "DCN",
+                "faculty": "Prof. Sumit Soni",
+                "venue": "Classroom no 302"
+              }
+            ],
+            "Tuesday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "PHP",
+                "faculty": "Prof. Akshar",
+                "venue": "Classroom no 602"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Gaming Tech.",
+                "faculty": "Prof. Y Rama Deepak",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "FSW",
+                "faculty": "Prof. Uma Bharti",
+                "venue": "Classroom no 305"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-1]",
+                "faculty": "Prof. Arun",
+                "venue": "Classroom no 307"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-2]",
+                "faculty": "Prof. Mini Bhola",
+                "venue": "Classroom no 308"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "BDA",
+                "faculty": "Prof. Sonali Kharade",
+                "venue": "Classroom no 602"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "Minor AI",
+                "faculty": "Prof. Prachi",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "DCN LAB",
+                "faculty": "Prof. Sumit Soni, Prof. Saumil Trivedi",
+                "venue": "Lab no 611,612"
+              }
+            ],
+            "Wednesday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "PHP LAB",
+                "faculty": "Prof. Akshar, Prof Tanmay Shah",
+                "venue": "Lab no 603,604"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Gaming Tech.",
+                "faculty": "Prof. Y Rama Deepak",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "FSW",
+                "faculty": "Prof. Uma Bharti",
+                "venue": "Classroom no 305"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-1]",
+                "faculty": "Prof. Arun",
+                "venue": "Classroom no 307"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Cloud Computing [Batch-2]",
+                "faculty": "Prof. Mini Bhola",
+                "venue": "Classroom no 308"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom no 602"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Minor AI LAB",
+                "faculty": "Prof. Prachi, Dr. Raj",
+                "venue": "Lab no 603,604"
+              }
+            ],
+            "Thursday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "PHP",
+                "faculty": "Prof. Akshar",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Class Test",
+                "faculty": "",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              }
+            ],
+            "Friday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Library",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "AEC - II Basic German II",
+                "faculty": "Prof Praniti",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "AEC - II Basic French II",
+                "faculty": "Dr. Shaili",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "Advance English - II",
+                "faculty": "Prof. Arpita Nayak",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Minor AI",
+                "faculty": "Prof. Prachi",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom no 302"
+              }
+            ],
+            "Saturday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Value Added",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Psychology of Stress, Health and Wellbeing (Swayam portal)",
+                "faculty": "",
+                "venue": ""
+              }
+            ]
+          }
+        },
+        "C": {
+          "minor": "AI & ML",
+          "building": "BHAGAT SINGH BUILDING",
+          "days": {
+            "Monday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Minor AI",
+                "faculty": "Dr. Raj",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "PHP",
+                "faculty": "Prof. Sohil Parmar",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Specialization",
+                "faculty": "Various",
+                "venue": "Various Classrooms"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "AEC - II Basic German II",
+                "faculty": "Prof Praniti",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "AEC - II Basic French II",
+                "faculty": "Dr. Shaili",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Statistics",
+                "faculty": "Dr. Pravin Vadhel",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "Advance English - II",
+                "faculty": "Prof. Hitesh Siju",
+                "venue": "Classroom no 303"
+              }
+            ],
+            "Tuesday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Minor AI LAB",
+                "faculty": "Dr. Raj, Prof. Prachi",
+                "venue": "Lab no 601,602"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Specialization",
+                "faculty": "Various",
+                "venue": "Various Classrooms"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "PHP",
+                "faculty": "Prof. Sohil Parmar",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Library",
+                "faculty": "",
+                "venue": ""
+              }
+            ],
+            "Wednesday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "DCN",
+                "faculty": "Prof. Saumil Trivedi",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Minor AI",
+                "faculty": "Dr. Raj",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Specialization",
+                "faculty": "Various",
+                "venue": "Various Classrooms"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              }
+            ],
+            "Thursday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "Advance English - II",
+                "faculty": "Prof. Hitesh Siju",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Class Test",
+                "faculty": "",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "DCN LAB",
+                "faculty": "Prof. Saumil Trivedi, Prof. FRK",
+                "venue": "Lab no 611,612"
+              }
+            ],
+            "Friday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "PHP LAB",
+                "faculty": "Prof. Sohil Parmar, Prof. Pratik P",
+                "venue": "Lab no 601,602"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "AEC - II Basic German II",
+                "faculty": "Prof Praniti",
+                "venue": "Classroom no 302"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "AEC - II Basic French II",
+                "faculty": "Dr. Shaili",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "PHP",
+                "faculty": "Prof. Sohil Parmar",
+                "venue": "Classroom no 308"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Minor AI",
+                "faculty": "Dr. Raj",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "Statistics",
+                "faculty": "Dr. Pravin Vadhel",
+                "venue": "Classroom no 303"
+              }
+            ],
+            "Saturday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "PULMS Self Study",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Psychology of Stress, Health and Wellbeing (Swayam portal)",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Value Added",
+                "faculty": "",
+                "venue": ""
+              }
+            ]
+          }
+        }
+      }
+    },
+    "IMCA": {
+      "semester": "4",
+      "academic_year": "2025-26 Even",
+      "divisions": {
+        "A": {
+          "building": "BHAGAT SINGH BUILDING",
+          "days": {
+            "Monday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "BIS",
+                "faculty": "Dr. ARM",
+                "venue": "Classroom-304"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "AI-I",
+                "faculty": "Dr. Raj Sinha",
+                "venue": "Lab no 603"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "CSF-I",
+                "faculty": "Prof. Saikat paramanik",
+                "venue": "Lab no 604"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Minor Project",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom-303"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "MAD",
+                "faculty": "Prof. Manish kumar joshi",
+                "venue": "Classroom-607"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "Library",
+                "faculty": "",
+                "venue": ""
+              }
+            ],
+            "Tuesday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "BIS",
+                "faculty": "Dr. ARM",
+                "venue": "Classroom-303"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom-303"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Placement Training",
+                "faculty": "Prof. Bhawishya Singh",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "EMA - F1",
+                "faculty": "",
+                "venue": "Classroom-601"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "MAD",
+                "faculty": "Prof. Manish kumar joshi",
+                "venue": "Classroom-601"
+              }
+            ],
+            "Wednesday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "AI-I",
+                "faculty": "Dr. Raj Sinha",
+                "venue": "Lab no 609"
+              },
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "CSF-I",
+                "faculty": "Prof. Saikat paramanik",
+                "venue": "Lab no 610"
+              },
+              {
+                "lecture": 2,
+                "time": "10:25 AM - 11:20 AM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom-305"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Placement Training",
+                "faculty": "Prof. Bhawishya Singh",
+                "venue": "Classroom no 603"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Minor Project",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "MAD",
+                "faculty": "Prof. Manish kumar joshi",
+                "venue": "Classroom-306"
+              }
+            ],
+            "Thursday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "AI-I",
+                "faculty": "Dr. Raj Sinha",
+                "venue": "Lab no 607"
+              },
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "CSF-I",
+                "faculty": "Prof. Saikat paramanik",
+                "venue": "Lab no 608"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "Placement Training",
+                "faculty": "Prof. Bhawishya Singh",
+                "venue": "Classroom no 303"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "Library",
+                "faculty": "",
+                "venue": ""
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "MAD",
+                "faculty": "Prof. Manish kumar joshi",
+                "venue": "Classroom-601"
+              }
+            ],
+            "Friday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "MAD [LAB]",
+                "faculty": "Prof. Manish kumar joshi",
+                "venue": "Lab-609"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "AI-I [LAB]",
+                "faculty": "Dr. Raj Sinha",
+                "venue": "Lab-601"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "CSF-I [LAB]",
+                "faculty": "Prof. Saikat paramanik",
+                "venue": "Lab-602"
+              },
+              {
+                "lecture": 5,
+                "time": "02:30 PM - 03:25 PM",
+                "subject": "EMA - F1",
+                "faculty": "",
+                "venue": "Classroom-605"
+              },
+              {
+                "lecture": 6,
+                "time": "03:25 PM - 04:20 PM",
+                "subject": "MAD",
+                "faculty": "Prof. Manish kumar joshi",
+                "venue": "Classroom-605"
+              }
+            ],
+            "Saturday": [
+              {
+                "lecture": 1,
+                "time": "09:30 AM - 10:25 AM",
+                "subject": "MAD [LAB]",
+                "faculty": "Prof. Manish kumar joshi",
+                "venue": "Lab-607"
+              },
+              {
+                "lecture": 3,
+                "time": "12:20 PM - 01:15 PM",
+                "subject": "BIS",
+                "faculty": "Dr. ARM",
+                "venue": "Classroom-307"
+              },
+              {
+                "lecture": 4,
+                "time": "01:15 PM - 02:10 PM",
+                "subject": "Statistics",
+                "faculty": "Dr. Priyanshu Yadav",
+                "venue": "Classroom-307"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
